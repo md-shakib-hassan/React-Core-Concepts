@@ -1,14 +1,38 @@
 import { useState } from 'react'
+import { Suspense } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Count from './Count'
 import Batsman from './Batsman'
+import Users from './Users'
+import Products from './Products'
+import Posts from './Posts'
+
+
+
+
+     const userFetch = fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response =>response.json())
+
+     const productFetch = async ()=>{
+        const data = await fetch("https://jsonplaceholder.typicode.com/users")
+        return data.json();
+    }
+
+    const postFetch= async()=>{
+      const data = await fetch('https://jsonplaceholder.typicode.com/posts')
+      return data.json();
+    }
+
+    
 
 function App() {
 
-  
+  const productPromise = productFetch();
+
+  const postPromise = postFetch();
 
   const btn=()=>{
     alert("Hello React!");
@@ -18,6 +42,9 @@ function App() {
     const number = num+10;
     alert(`sum is ${number}`);
   }
+
+ 
+
 
   return (
     <>
@@ -41,6 +68,8 @@ function App() {
           <Count></Count>
           
         </div>
+
+       
         
       </section>
 
@@ -54,6 +83,20 @@ function App() {
       <section id="spacer"></section>
 
       <Batsman></Batsman>
+
+       <Suspense fallback={<p>Loading... </p>}>
+      
+        <Users userFetch={userFetch}></Users>
+      </Suspense>
+
+          <Suspense fallback={<p>Loading... </p>}>
+            <Products key={productFetch.id} productPromise={productPromise}></Products>
+          </Suspense>
+
+      <Suspense fallback={<h5>Loading... </h5>}>
+          <Posts key={postPromise.id} postPromise={postPromise}></Posts>
+      </Suspense>
+       
     </>
   )
 }
