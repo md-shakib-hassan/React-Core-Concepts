@@ -1,0 +1,9 @@
+.counterisBorder{
+    border: 2px solid tomato;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.background{
+    background-color: gray;
+}
