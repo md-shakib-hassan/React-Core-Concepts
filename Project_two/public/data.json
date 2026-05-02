@@ -1,0 +1,78 @@
+{
+  "blog_title": "Avengers Heroes Overview",
+  "author": "Shakib",
+  "posts": [
+    {
+      "id": 1,
+      "name": "Iron Man",
+      "real_name": "Tony Stark",
+      "skills": ["Genius-level intellect", "Engineering", "Powered armor suit"],
+      "powers": ["Flight", "Energy blasts", "AI integration"],
+      "short_description": "A billionaire inventor who builds a high-tech suit to fight evil and protect the world.",
+      "likes": ["Technology", "Innovation", "Luxury lifestyle"],
+      "team_role": "Leader / Strategist",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg",
+      "reference_url": "https://en.wikipedia.org/wiki/Iron_Man"
+    },
+    {
+      "id": 2,
+      "name": "Captain America",
+      "real_name": "Steve Rogers",
+      "skills": ["Leadership", "Combat strategy", "Hand-to-hand combat"],
+      "powers": ["Enhanced strength", "Super soldier serum", "Vibranium shield"],
+      "short_description": "A patriotic super soldier known for his bravery and leadership.",
+      "likes": ["Justice", "Discipline", "Teamwork"],
+      "team_role": "Leader",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/9/91/CaptainAmerica109.jpg",
+      "reference_url": "https://en.wikipedia.org/wiki/Captain_America"
+    },
+    {
+      "id": 3,
+      "name": "Thor",
+      "real_name": "Thor Odinson",
+      "skills": ["Combat", "Weapon mastery", "Battle strategy"],
+      "powers": ["God of Thunder", "Lightning control", "Super strength"],
+      "short_description": "The Asgardian god who controls thunder and wields a magical hammer.",
+      "likes": ["Battle", "Honor", "Asgard"],
+      "team_role": "Warrior",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Thor_%28Marvel_Comics%29.png",
+      "reference_url": "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)"
+    },
+    {
+      "id": 4,
+      "name": "Hulk",
+      "real_name": "Bruce Banner",
+      "skills": ["Scientific knowledge", "Radiation expertise"],
+      "powers": ["Super strength", "Regeneration", "Rage transformation"],
+      "short_description": "A scientist who turns into a powerful green monster when angry.",
+      "likes": ["Science", "Peace", "Isolation"],
+      "team_role": "Heavy hitter",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/5/59/Hulk_%28comics_character%29.png",
+      "reference_url": "https://en.wikipedia.org/wiki/Hulk"
+    },
+    {
+      "id": 5,
+      "name": "Black Widow",
+      "real_name": "Natasha Romanoff",
+      "skills": ["Espionage", "Martial arts", "Stealth"],
+      "powers": ["Peak human condition", "Expert spy"],
+      "short_description": "A highly trained spy known for stealth and intelligence.",
+      "likes": ["Secrets", "Strategy", "Mission success"],
+      "team_role": "Spy / Assassin",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/1/1e/Black_Widow_1.png",
+      "reference_url": "https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)"
+    },
+    {
+      "id": 6,
+      "name": "Hawkeye",
+      "real_name": "Clint Barton",
+      "skills": ["Archery", "Marksmanship", "Tactics"],
+      "powers": ["Expert aim", "Trick arrows"],
+      "short_description": "A master archer who never misses his target.",
+      "likes": ["Family", "Precision", "Loyalty"],
+      "team_role": "Marksman",
+      "image_url": "https://upload.wikimedia.org/wikipedia/en/9/90/Hawkeye_%28Clint_Barton%29.png",
+      "reference_url": "https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)"
+    }
+  ]
+}
