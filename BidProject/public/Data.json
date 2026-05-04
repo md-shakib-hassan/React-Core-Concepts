@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Vintage Rolex Watch",
+    "description": "A rare vintage Rolex watch in excellent condition, perfect for collectors.",
+    "currentBidPrice": 2500,
+    "timeLeft": "2h 30m",
+    "bidsCount": 15,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+  },
+  {
+    "id": 2,
+    "title": "Gaming Laptop (RTX 4060)",
+    "description": "High-performance gaming laptop with RTX 4060 GPU and 16GB RAM.",
+    "currentBidPrice": 1200,
+    "timeLeft": "5h 10m",
+    "bidsCount": 22,
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8"
+  },
+  {
+    "id": 3,
+    "title": "iPhone 14 Pro Max",
+    "description": "Slightly used iPhone 14 Pro Max with 256GB storage.",
+    "currentBidPrice": 900,
+    "timeLeft": "1h 45m",
+    "bidsCount": 30,
+    "image": "https://www.techadvisor.com/wp-content/uploads/2023/11/iPhone-14-Pro-Max_review.jpg?quality=50&strip=all&w=1024l"
+  },
+  {
+    "id": 4,
+    "title": "Wooden Study Table",
+    "description": "Solid wood study table with a modern minimalist design.",
+    "currentBidPrice": 150,
+    "timeLeft": "8h 20m",
+    "bidsCount": 8,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDucWMDHI413kpbPtDUKEK7n9f9ISFkAFGVg&s"
+  },
+  {
+    "id": 5,
+    "title": "DSLR Camera (Canon EOS 80D)",
+    "description": "Professional DSLR camera with lens kit, great for photography enthusiasts.",
+    "currentBidPrice": 700,
+    "timeLeft": "3h 55m",
+    "bidsCount": 18,
+    "image": "https://images.unsplash.com/photo-1516035069371-29a1b244cc32"
+  }
+]
