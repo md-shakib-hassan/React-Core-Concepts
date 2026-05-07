@@ -1,28 +1,39 @@
 import React from 'react'
-import { Item } from '../Item/Item'
-import { BidItem } from '../BidItem/BidItem'
 
-export const Main = ({data}) => {
+import { BidItem } from '../BidItem/BidItem'
+import { Item } from '../Item/Item'
+
+export const Main = () => {
 
    
   return (
 
     <>
-    <div className='flex space-x-4'>
+        <div className='bg-[#EBF0F5]'>
+         <div className='pt-15 pl-8'>
+           <h1 className='font-semibold text-xl'>Active Auctions</h1>
+          <p className='w-1/2'>Discover and bid on extraordinary items</p>
+         </div>
 
-         <div className='grid grid-cols-3 w-[60%] gap-10'>
-        {
-            data.map(element => <Item element={element}></Item> )
-        }
-        
-    </div>
+           <div className='md:flex flex justify-around  '>
 
-    <div>
-        <BidItem></BidItem>
+      
 
-    </div>
+        {/* showcase of bid item */}
+        <div className='w-[70%] bg-white my-10 rounded-xl'>
+          <BidItem></BidItem>
+              
+        </div>
 
-    </div>
+        {/* here for selected bid item */}
+        <div className='my-10'>
+          <Item></Item>
+        </div>
+
+      </div>
+        </div>
+      
+    
     
     </>
    

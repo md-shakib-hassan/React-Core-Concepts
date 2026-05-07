@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Navbar } from './components/Navbar/Navbar'
 import { Main } from './components/Main/Main'
+import { Banner } from './components/Banner/Banner'
+import { Footer } from './components/Footer/Footer'
 
 
 import './App.css'
@@ -19,7 +21,12 @@ function App() {
     <>
    
       <Navbar></Navbar>
-      <Main data={data} ></Main>
+      <Banner></Banner>
+
+     
+      <Main ></Main>
+
+      <Footer></Footer>
       
     </>
   )
