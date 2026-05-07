@@ -3,9 +3,9 @@ import React from 'react'
 import { BidItem } from '../BidItem/BidItem'
 import { Item } from '../Item/Item'
 
-export const Main = () => {
+export const Main = ({data}) => {
 
-   
+   console.log(data);
   return (
 
     <>
@@ -21,7 +21,9 @@ export const Main = () => {
 
         {/* showcase of bid item */}
         <div className='w-[70%] bg-white my-10 rounded-xl'>
-          <BidItem></BidItem>
+          
+          <BidItem data={data}></BidItem>
+          
               
         </div>
 

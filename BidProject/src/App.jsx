@@ -24,7 +24,7 @@ function App() {
       <Banner></Banner>
 
      
-      <Main ></Main>
+      <Main data ={data}></Main>
 
       <Footer></Footer>
       
