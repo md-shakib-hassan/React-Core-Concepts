@@ -8,7 +8,10 @@ import { Footer } from './components/Footer/Footer'
 import './App.css'
 
 function App() {
-  const [data, setData] = useState([])
+  const [data, setData] = useState([]);
+
+
+  const [bidItemList, setBidItemList] = useState([]);
 
   useEffect(()=>{
     fetch('Data.json')
@@ -16,6 +19,12 @@ function App() {
     .then(result => setData(result));
   },[])
 
+  const handleBidItemLIst=(element)=>{
+    const newItem = [...bidItemList,element]
+        setBidItemList(newItem)
+  }
+
+  console.log(bidItemList);
 
   return (
     <>
@@ -24,7 +33,7 @@ function App() {
       <Banner></Banner>
 
      
-      <Main data ={data}></Main>
+      <Main handleBidItemLIst={handleBidItemLIst} data ={data} bidItemList={bidItemList}></Main>
 
       <Footer></Footer>
       

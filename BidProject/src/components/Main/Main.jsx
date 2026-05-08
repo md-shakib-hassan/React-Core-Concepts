@@ -3,9 +3,8 @@ import React from 'react'
 import { BidItem } from '../BidItem/BidItem'
 import { Item } from '../Item/Item'
 
-export const Main = ({data}) => {
+export const Main = ({data,handleBidItemLIst,bidItemList}) => {
 
-   console.log(data);
   return (
 
     <>
@@ -22,14 +21,14 @@ export const Main = ({data}) => {
         {/* showcase of bid item */}
         <div className='w-[70%] bg-white my-10 rounded-xl'>
           
-          <BidItem data={data}></BidItem>
+          <BidItem handleBidItemLIst={handleBidItemLIst} data={data}></BidItem>
           
               
         </div>
 
         {/* here for selected bid item */}
         <div className='my-10'>
-          <Item></Item>
+          <Item bidItemList={bidItemList}></Item>
         </div>
 
       </div>

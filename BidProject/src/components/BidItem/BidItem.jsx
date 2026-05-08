@@ -1,7 +1,7 @@
 import React from 'react'
 import { ItemsList } from '../itemList/ItemsList'
 
-export const BidItem = ({data}) => {
+export const BidItem = ({data,handleBidItemLIst}) => {
   return (
     <>
       <div className="overflow-x-auto ">
@@ -20,7 +20,7 @@ export const BidItem = ({data}) => {
           </thead>
           <tbody>
             {
-              data.map(element=> <ItemsList element={element}> </ItemsList>)
+              data.map(element=> <ItemsList key={element.id} handleBidItemLIst={handleBidItemLIst} element={element}> </ItemsList>)
             }
                       
           </tbody>
