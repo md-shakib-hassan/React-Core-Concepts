@@ -8,10 +8,12 @@ import { Footer } from './components/Footer/Footer'
 import './App.css'
 
 function App() {
+
   const [data, setData] = useState([]);
 
 
   const [bidItemList, setBidItemList] = useState([]);
+   const [amount,setAmount]=useState(0);
 
   useEffect(()=>{
     fetch('Data.json')
@@ -22,9 +24,17 @@ function App() {
   const handleBidItemLIst=(element)=>{
     const newItem = [...bidItemList,element]
         setBidItemList(newItem)
+        const newAmount = amount+element.currentBidPrice;
+        setAmount(newAmount)
   }
 
-  console.log(bidItemList);
+  const handleDeleteBidItem = (element)=>{
+     const remainingItem = bidItemList.filter(item => item.id!==element.id)
+     setBidItemList(remainingItem);
+     const remainingAmount = amount-element.currentBidPrice;
+      setAmount(remainingAmount);
+
+  }
 
   return (
     <>
@@ -33,7 +43,7 @@ function App() {
       <Banner></Banner>
 
      
-      <Main handleBidItemLIst={handleBidItemLIst} data ={data} bidItemList={bidItemList}></Main>
+      <Main handleDeleteBidItem={handleDeleteBidItem }  handleBidItemLIst={handleBidItemLIst} data ={data} bidItemList={bidItemList} amount={amount}></Main>
 
       <Footer></Footer>
       

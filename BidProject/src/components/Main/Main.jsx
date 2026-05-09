@@ -3,7 +3,7 @@ import React from 'react'
 import { BidItem } from '../BidItem/BidItem'
 import { Item } from '../Item/Item'
 
-export const Main = ({data,handleBidItemLIst,bidItemList}) => {
+export const Main = ({data,handleBidItemLIst,bidItemList,amount,handleDeleteBidItem }) => {
 
   return (
 
@@ -28,7 +28,7 @@ export const Main = ({data,handleBidItemLIst,bidItemList}) => {
 
         {/* here for selected bid item */}
         <div className='my-10'>
-          <Item bidItemList={bidItemList}></Item>
+          <Item  bidItemList={bidItemList} amount={amount} handleDeleteBidItem ={handleDeleteBidItem }></Item>
         </div>
 
       </div>
