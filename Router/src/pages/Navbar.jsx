@@ -6,23 +6,24 @@ import { Footer } from '../components/Footer'
 export const Navbar = () => {
     return (
         <>
-        <div>
-            <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/home" >Home</Link>
-       <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to= "/about">About</Link>
-       <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/contact">Contact</Link>
-       <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/services">Services</Link>
+            <div>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/home" >Home</Link>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/about">About</Link>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/contact">Contact</Link>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to="/services">Services</Link>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to='/learn' >Learn More</Link>
+                <Link className='text-purple-600 mx-5 font-extrabold text-5xl' to='/whyus' >Why Us?</Link>
+                <Outlet>
 
-        <Outlet>
+                </Outlet>
+            </div>
 
-        </Outlet>
-        </div>
-        
-       <Footer></Footer>
-       
+            <Footer></Footer>
 
-       
+
+
         </>
-              
-        
+
+
     )
 }
