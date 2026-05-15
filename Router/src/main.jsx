@@ -12,8 +12,11 @@ import { Services } from './pages/Services.jsx';
 import { Navbar } from './pages/Navbar.jsx';
 import Learn from './pages/Learn.jsx';
 import Whyus from './pages/Whyus.jsx';
+import UserDetails from './pages/UserDetails.jsx';
 
-const dataPromise = fetch("https://jsonplaceholder.typicode.com/posts").then(response => response.json())
+const dataPromise = fetch("https://jsonplaceholder.typicode.com/users")
+                    .then(response => response.json())
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -27,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: '/learn',
         Component: Learn,
-        loader: () => fetch("https://jsonplaceholder.typicode.com/posts")
+        loader: () => fetch("https://jsonplaceholder.typicode.com/users")
       }
       ,
       {
@@ -35,6 +38,12 @@ const router = createBrowserRouter([
         element: <div>
           <Whyus dataPromise={dataPromise}> </Whyus>
         </div>
+      },
+      {
+        // here start concept of dynamic routing 
+        path:'/user/:userId',
+        Component:UserDetails,
+
       }
 
     ]
