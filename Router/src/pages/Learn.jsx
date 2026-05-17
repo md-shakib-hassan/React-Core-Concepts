@@ -14,7 +14,7 @@ const Learn = () => {
     </div>
     <div className='grid grid-cols-3 md:grid-cols-3 gap-2 space-y-1'>
       {
-        data.map(element => <Users data={element}></Users>)
+        data.map(element => <Users key={element.id} data={element}></Users>)
       }
     </div>
     </>

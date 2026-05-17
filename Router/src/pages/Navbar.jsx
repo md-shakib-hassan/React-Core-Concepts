@@ -11,8 +11,9 @@ export const Navbar = () => {
                 <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to="/about">About</NavLink>
                 <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to="/contact">Contact</NavLink>
                 <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to="/services">Services</NavLink>
-                <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to='/learn' >Learn More</NavLink>
+                <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to='/users' >Users</NavLink>
                 <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to='/whyus' >Why Us?</NavLink>
+                <NavLink className='text-purple-600 mx-5 font-extrabold text-5xl' to='/posts' >Posts</NavLink>
                 <Outlet>
 
                 </Outlet>

@@ -12,7 +12,7 @@ const Users = ({ data }) => {
             <h1 className='text-3xl font-bold'>{name}</h1>
             <p>{username}</p>
             <p>{email}</p>
-           <button> <Link to={`/user${id}`}>Show User Details</Link> </button> 
+           <button> <Link to={`/users/${id}`}>Show User Details</Link> </button> 
         </div>
 
     )
