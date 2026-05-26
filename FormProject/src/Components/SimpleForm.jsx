@@ -2,10 +2,11 @@ import React from 'react'
 
 const SimpleForm = () => {
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(e.target.name.value);
-        console.log(e.target.email.value);
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(event.target)
+        console.log(event.target.name.value);
+        console.log(event.target.email.value);
     }
 
     return (
