@@ -6,8 +6,6 @@ export const AssetContext = createContext('');
 export const MoneyContext = createContext(0);
 
 
-
-
 const Family = () => {
     const asset ='diamond';
 
@@ -17,7 +15,7 @@ const Family = () => {
     <>
     <h3 className='text-center text-2xl font-semibold'>Family</h3>
     <div>
-        <AssetContext value={asset,[money,setMoney]}>
+        <AssetContext value={asset}>
             <Grandpa></Grandpa>
         </AssetContext>
        
