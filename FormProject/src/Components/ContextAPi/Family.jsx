@@ -3,7 +3,7 @@ import { createContext } from 'react'
 import Grandpa from './Grandpa';
 
 export const AssetContext = createContext('');
-export const MoneyContext = createContext(0);
+// export const MoneyContext = createContext(0);
 
 
 const Family = () => {
@@ -14,8 +14,9 @@ const Family = () => {
   return (
     <>
     <h3 className='text-center text-2xl font-semibold'>Family</h3>
+    <h1 className='text-center'>Total Wealth:${money}</h1>
     <div>
-        <AssetContext value={asset}>
+        <AssetContext value={{asset,money,setMoney}}>
             <Grandpa></Grandpa>
         </AssetContext>
        
