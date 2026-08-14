@@ -22,7 +22,6 @@ export const Navbar = () => {
                     isNavigating && <h1 className='text-5xl text-red-600'>Loading..........</h1>
                 }
 
-
                 <Outlet>
 
                 </Outlet>
