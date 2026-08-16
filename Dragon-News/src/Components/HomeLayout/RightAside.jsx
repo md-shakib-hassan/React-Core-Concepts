@@ -1,8 +1,15 @@
 import React from 'react'
+import LoginWith from './LoginWith'
+import FindUs from '../FindUs'
+import QZone from '../QZone'
 
 const RightAside = () => {
   return (
-    <div>RightAside</div>
+    <div className='space-y-5'>
+      <LoginWith></LoginWith>
+      <FindUs></FindUs>
+      <QZone></QZone>
+    </div>
   )
 }
 
