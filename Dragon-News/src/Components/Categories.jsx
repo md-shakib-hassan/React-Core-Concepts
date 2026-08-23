@@ -8,7 +8,12 @@ const Categories = () => {
     fetch('/Categories.json')
       .then(response => response.json())
       .then(data => setCategories(data))
-      .catch(error => console.error(error));
+      .catch(error => {
+
+      }
+        
+      )
+
   }, []);
 
   return (

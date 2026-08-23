@@ -13,7 +13,7 @@ const NewsCard = ({ news }) => {
 
   const location = useLocation();
 
-  // console.log(location.state)
+ 
 
   return (
     <article className="card  w-full my-5 bg-base-100 border border-base-300 shadow-sm hover:shadow-md transition-shadow duration-300">

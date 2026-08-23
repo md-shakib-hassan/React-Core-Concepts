@@ -16,7 +16,7 @@ const NewsDetailsCard = () => {
         setNews(singleNews);
     },[data,id])
 
-    console.log(news);
+   
 
     const { category_id, title, details, thumbnail_url } = news;
 

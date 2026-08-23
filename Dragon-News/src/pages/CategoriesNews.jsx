@@ -7,13 +7,13 @@ const CategoriesNews = () => {
   const data = useLoaderData();
   
 
-  const [typeNews, setTypeNews] = useState([]);
+  const [typeNews, setTypeNews] = useState([])
 
-  // console.log(typeNews);
+
   useEffect(() => {
 
     if (id == "0") {
-      setTypeNews(data);
+      setTypeNews(data)
       return;
     } else if (id == "1") {
       const filterNews = data.filter(value => value.others.is_today_pick == true);

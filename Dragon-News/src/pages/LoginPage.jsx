@@ -9,7 +9,7 @@ const LoginPage = () => {
   const [error,setError] =useState('');
 
   const location =useLocation();
-  // console.log(location);
+ 
 
   const navigate = useNavigate();
 
